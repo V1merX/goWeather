@@ -30,7 +30,7 @@ func sendRequest(city string) *http.Response {
 
 	resp, err := client.Get("https://goweather.herokuapp.com/weather/" + city)
 	if err != nil {
-		fmt.Println("We could`t send request")
+		fmt.Println("We couldn`t send request")
 		log.Fatal(err)
 	}
 
